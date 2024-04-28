@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>shift site</title>
+    <title>being shifter!</title>
     <style>
 
       h1 {
@@ -36,6 +36,15 @@
   background-color: white;
   color: black;
 }
+  .button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid white;
+  }
+  .button2:hover {
+  background-color: white;
+  color: black;
+}
 .div1 {
 	text-align: center;
     font-family : lotus;
@@ -63,25 +72,45 @@
 		    .bimg {
 			    width : 100% ;
 		    } 
+	    .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+	    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
     </style>
   </head>
   <body>
 	  <img src="Picsart_24-04-28_18-29-28-752.jpg" class="bimg">
 	  <div class="uhm">
 
-   <button class="button button1"><details>
-  <summary>درباره شیفتینگ</summary>
-  <a href="holy.site.html">تجربیات متخصصان</a><br>
-  <a href="nimro.html">ابزار تمرکز</a>
-</details></button></li>
- <button class="button button1"><details>
-  <summary>تهیه کنندگان</summary>
-  <a href="ba ma.html">ارتباط با ما</a><br>
-  <a href="darbare ma.html">درباره ما</a>
-</details></button>
-		  <button class="button button1">
-<a href="index.html">صفحه اصلی</a>
-
+   <button class="button button1">
+  <div class="dropdown">
+  <span>درباره شیفتینگ</span>
+  <div class="dropdown-content">
+<a href="holy.site.html">مصاحبه با متخصصان</a>
+  </div>
+</div>
+</button>
+ <button class="button button2">
+  <div class="dropdown">
+  <span>تهیه‌کنندگان</span>
+  <div class="dropdown-content">
+<a href="nimro.html">درباره ما، ارتباط با ما</a>
+  </div>
+</div>
 </button>
 
 		
@@ -90,16 +119,13 @@
     <div>  
       <p class="texta">ایا تا به حال خواسته اید به دنیایی بروید که همیشه سناریو آن در ذهنتان باقی خواهد ماند؟ شیفتینگ کار شما را آسان خواهد کرد</p>
 	<p class= "textb"> دراین سایت به چگونگی یک شیفت آسان و به پاسخ پرسش شیفتینگ چیست میپردازیم</p>
-<ul>
-	<li>
-		 <button class="button button1"><details>
-  <summary>تهیه کنندگان</summary>
-  <a href="ba ma.html">ارتباط با ما</a><br>
-  <a href="darbare ma.html">درباره ما</a>
-</details></button>
-	</li>
-</ul>
 
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+  <p>Hello World!</p>
+  </div>
+</div>
 
     </div>
   </body>
