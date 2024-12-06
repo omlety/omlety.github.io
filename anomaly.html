@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>anomaly</title>
+    <style>
+
+      h1 {
+        color: white;
+        text-align: center;
+        font-family : lotus;
+      }
+      p { 
+      	text-align: center;
+        font-family : lotus;
+	    font-size: 130%;
+        color: #e1f0f4;
+      }
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: #446d78;">
+        <h1>خوش اومدید</h1>
+        <p>هر ویس رو حداکثر دوبار میتونید پخش کنید 
+            و بعد از اون ویس ها بسته میشن
+        </p>
+        <div>
+            <audio id="myAudio" 
+            controls autoplay preload="auto" 
+            onended="disableControls()">
+        <source src="c:\Users\user\Downloads\8th of November 2024.mp3" type="audio/mpeg">
+    </audio>
+    <p id="message" 
+        style="display: none;">
+        این ویس فقط یکبار پخش میشه
+    </p>
+    <script>
+        let audioPlayed = false;
+        function disableControls() {
+            let audio = 
+                document.getElementById('myAudio');
+            let message = 
+                document.getElementById('message');
+
+            if (!audioPlayed) {
+                audio.controls = false;
+                audioPlayed = true;
+                message.style.display = 'block';
+            }
+            audio.removeEventListener(
+            'ended', disableControls
+            );
+        }
+    </script>
+    </div>
+        <p> و بار دوم</p>
+        <div>
+            <audio id="myAudio" 
+            controls autoplay preload="auto" 
+            onended="disableControls()">
+        <source src="c:\Users\user\Downloads\8th of November 2024.mp3" type="audio/mpeg">
+    </audio>
+    <p id="message" 
+        style="display: none;">
+        این ویس فقط یکبار پخش میشه
+    </p>
+    <script>
+        let audioPlayed = false;
+        function disableControls() {
+            let audio = 
+                document.getElementById('myAudio');
+            let message = 
+                document.getElementById('message');
+
+            if (!audioPlayed) {
+                audio.controls = false;
+                audioPlayed = true;
+                message.style.display = 'block';
+            }
+            audio.removeEventListener(
+            'ended', disableControls
+            );
+        }
+    </script>
+    </div>
+  </body>
+</html>
